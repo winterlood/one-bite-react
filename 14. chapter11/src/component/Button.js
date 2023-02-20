@@ -11,9 +11,7 @@ const Button = ({ text, type, onClick }) => {
     </button>
   );
 };
-
 Button.defaultProps = {
   type: "default",
 };
-
 export default Button;

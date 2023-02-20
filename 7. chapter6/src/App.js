@@ -1,8 +1,8 @@
-import { useRef, useEffect, useState } from "react";
 import "./App.css";
+import { useRef, useState } from "react";
 import Controller from "./component/Controller";
-import Even from "./component/Even";
 import Viewer from "./component/Viewer";
+import Even from "./component/Even";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -16,19 +16,6 @@ function App() {
   };
 
   const didMountRef = useRef(false);
-
-  useEffect(() => {
-    if (!didMountRef.current) {
-      didMountRef.current = true;
-      return;
-    } else {
-      console.log("컴포넌트 업데이트");
-    }
-  });
-
-  useEffect(() => {
-    console.log("컴포넌트 마운트");
-  }, []);
 
   return (
     <div className="App">
@@ -46,5 +33,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

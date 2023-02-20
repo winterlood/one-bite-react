@@ -5,6 +5,7 @@ const EmotionItem = ({ id, img, name, onClick, isSelected }) => {
   const handleOnClick = () => {
     onClick(id);
   };
+
   return (
     <div
       className={[
@@ -18,5 +19,4 @@ const EmotionItem = ({ id, img, name, onClick, isSelected }) => {
     </div>
   );
 };
-
 export default React.memo(EmotionItem);

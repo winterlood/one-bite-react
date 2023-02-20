@@ -18,21 +18,41 @@
 .DiaryItem .img_section_1 {
   background-color: #64c964;
 }
+
 .DiaryItem .img_section_2 {
   background-color: #9dd772;
 }
+
 .DiaryItem .img_section_3 {
   background-color: #fdce17;
 }
+
 .DiaryItem .img_section_4 {
   background-color: #fd8446;
 }
+
 .DiaryItem .img_section_5 {
   background-color: #fd565f;
 }
 
 .DiaryItem .img_section img {
   width: 50%;
+}
+
+.DiaryItem .info_section {
+  flex-grow: 1;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.DiaryItem .info_section .date_wrapper {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.DiaryItem .info_section .content_wrapper {
+  font-size: 18px;
 }
 
 .DiaryItem .button_section {

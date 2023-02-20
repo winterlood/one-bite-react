@@ -1,5 +1,6 @@
-import { useState, useMemo, useContext } from "react";
+import { useContext, useMemo, useState } from "react";
 import { TodoStateContext } from "../App";
+
 import TodoItem from "./TodoItem";
 import "./TodoList.css";
 
@@ -10,6 +11,7 @@ const TodoList = () => {
   const onChangeSearch = (e) => {
     setSearch(e.target.value);
   };
+
   const getSearchResult = () => {
     return search === ""
       ? todo
@@ -35,9 +37,9 @@ const TodoList = () => {
     <div className="TodoList">
       <h4>Todo List 🌱</h4>
       <div>
-        <div>총 개수: {totalCount}</div>
-        <div>완료된 할 일:{doneCount}</div>
-        <div>아직 완료하지 못한 할 일:{notDoneCount}</div>
+        <div>총개수: {totalCount}</div>
+        <div>완료된 할 일: {doneCount}</div>
+        <div>아직 완료하지 못한 할 일: {notDoneCount}</div>
       </div>
       <input
         value={search}

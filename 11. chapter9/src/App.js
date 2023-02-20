@@ -1,5 +1,5 @@
-import React, { useMemo, useReducer, useCallback, useRef } from "react";
 import "./App.css";
+import React, { useMemo, useCallback, useReducer, useRef } from "react";
 import Header from "./component/Header";
 import TodoEditor from "./component/TodoEditor";
 import TodoList from "./component/TodoList";
@@ -53,8 +53,8 @@ export const TodoDispatchContext = React.createContext();
 
 function App() {
   const [todo, dispatch] = useReducer(reducer, mockTodo);
-
   const idRef = useRef(3);
+
   const onCreate = (content) => {
     dispatch({
       type: "CREATE",
@@ -67,6 +67,7 @@ function App() {
     });
     idRef.current += 1;
   };
+
   const onUpdate = useCallback((targetId) => {
     dispatch({
       type: "UPDATE",
@@ -87,7 +88,6 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
       <TodoStateContext.Provider value={todo}>
         <TodoDispatchContext.Provider value={memoizedDispatches}>
           <TodoEditor />
@@ -97,5 +97,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

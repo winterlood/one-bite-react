@@ -1,5 +1,4 @@
 import "./Header.css";
-
 const Header = ({ title, leftChild, rightChild }) => {
   return (
     <div className="Header">
@@ -9,5 +8,4 @@ const Header = ({ title, leftChild, rightChild }) => {
     </div>
   );
 };
-
 export default Header;

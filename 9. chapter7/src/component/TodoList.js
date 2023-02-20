@@ -7,6 +7,7 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
   const onChangeSearch = (e) => {
     setSearch(e.target.value);
   };
+
   const getSearchResult = () => {
     return search === ""
       ? todo
@@ -37,5 +38,4 @@ const TodoList = ({ todo, onUpdate, onDelete }) => {
     </div>
   );
 };
-
 export default TodoList;

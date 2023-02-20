@@ -1,13 +1,10 @@
-import { Routes, Route, Link } from "react-router-dom";
 import React, { useReducer, useRef, useEffect, useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import New from "./pages/New";
 import Diary from "./pages/Diary";
 import Edit from "./pages/Edit";
-
-export const DiaryStateContext = React.createContext();
-export const DiaryDispatchContext = React.createContext();
 
 function reducer(state, action) {
   switch (action.type) {
@@ -39,29 +36,32 @@ function reducer(state, action) {
   }
 }
 
+export const DiaryStateContext = React.createContext();
+export const DiaryDispatchContext = React.createContext();
+
 function App() {
   const [isDataLoaded, setIsDataLoaded] = useState(false);
   const [data, dispatch] = useReducer(reducer, []);
+  const idRef = useRef(0);
+
   useEffect(() => {
     const rawData = localStorage.getItem("diary");
     if (!rawData) {
       setIsDataLoaded(true);
       return;
     }
-
     const localData = JSON.parse(rawData);
     if (localData.length === 0) {
       setIsDataLoaded(true);
       return;
     }
-
     localData.sort((a, b) => Number(b.id) - Number(a.id));
     idRef.current = localData[0].id + 1;
+
     dispatch({ type: "INIT", data: localData });
     setIsDataLoaded(true);
   }, []);
 
-  const idRef = useRef(0);
   const onCreate = (date, content, emotionId) => {
     dispatch({
       type: "CREATE",
@@ -74,6 +74,7 @@ function App() {
     });
     idRef.current += 1;
   };
+
   const onUpdate = (targetId, date, content, emotionId) => {
     dispatch({
       type: "UPDATE",
@@ -85,6 +86,7 @@ function App() {
       },
     });
   };
+
   const onDelete = (targetId) => {
     dispatch({
       type: "DELETE",
@@ -93,7 +95,7 @@ function App() {
   };
 
   if (!isDataLoaded) {
-    return <div>데이터를 불러오는 중 입니다</div>;
+    return <div>데이터를 불러오는 중입니다</div>;
   } else {
     return (
       <DiaryStateContext.Provider value={data}>
@@ -117,5 +119,4 @@ function App() {
     );
   }
 }
-
 export default App;

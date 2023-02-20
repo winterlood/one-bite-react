@@ -1,8 +1,9 @@
-import { useReducer, useRef } from "react";
 import "./App.css";
+import { useReducer, useRef } from "react";
 import Header from "./component/Header";
 import TodoEditor from "./component/TodoEditor";
 import TodoList from "./component/TodoList";
+import TestComp from "./component/TestComp";
 
 const mockTodo = [
   {
@@ -50,8 +51,8 @@ function reducer(state, action) {
 
 function App() {
   const [todo, dispatch] = useReducer(reducer, mockTodo);
-
   const idRef = useRef(3);
+
   const onCreate = (content) => {
     dispatch({
       type: "CREATE",
@@ -81,11 +82,11 @@ function App() {
 
   return (
     <div className="App">
+      {/* <TestComp /> */}
       <Header />
       <TodoEditor onCreate={onCreate} />
       <TodoList todo={todo} onUpdate={onUpdate} onDelete={onDelete} />
     </div>
   );
 }
-
 export default App;

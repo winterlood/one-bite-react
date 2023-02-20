@@ -2,18 +2,17 @@ import { useNavigate } from "react-router-dom";
 import Button from "../component/Button";
 import Header from "../component/Header";
 import Editor from "../component/Editor";
-import { useContext, useEffect } from "react";
 import { DiaryDispatchContext } from "../App";
+import { useContext, useEffect } from "react";
 import { setPageTitle } from "../util";
 
 const New = () => {
+  const { onCreate } = useContext(DiaryDispatchContext);
+  const navigate = useNavigate();
+
   useEffect(() => {
     setPageTitle("새 일기 쓰기");
   }, []);
-
-  const { onCreate } = useContext(DiaryDispatchContext);
-
-  const navigate = useNavigate();
 
   const goBack = () => {
     navigate(-1);
@@ -35,5 +34,4 @@ const New = () => {
     </div>
   );
 };
-
 export default New;

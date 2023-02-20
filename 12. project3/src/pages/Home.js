@@ -1,13 +1,16 @@
 import { useState, useContext, useEffect } from "react";
 import { DiaryStateContext } from "../App";
 import Button from "../component/Button";
-import DiaryList from "../component/DiaryList";
 import Header from "../component/Header";
 import { getMonthRangeByDate } from "../util";
+import DiaryList from "../component/DiaryList";
 
 const Home = () => {
   const data = useContext(DiaryStateContext);
   const [pivotDate, setPivotDate] = useState(new Date());
+  const headerTitle = `${pivotDate.getFullYear()}년 ${
+    pivotDate.getMonth() + 1
+  }월`;
   const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
@@ -23,17 +26,12 @@ const Home = () => {
     }
   }, [data, pivotDate]);
 
-  const headerTitle = `${pivotDate.getFullYear()}년 ${
-    pivotDate.getMonth() + 1
-  }월`;
-
   const onIncreaseMonth = () => {
     setPivotDate(new Date(pivotDate.getFullYear(), pivotDate.getMonth() + 1));
   };
   const onDecreaseMonth = () => {
     setPivotDate(new Date(pivotDate.getFullYear(), pivotDate.getMonth() - 1));
   };
-
   return (
     <div>
       <Header
@@ -45,5 +43,4 @@ const Home = () => {
     </div>
   );
 };
-
 export default Home;

@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
 import "./App.css";
+import { useState, useRef } from "react";
 import Header from "./component/Header";
 import TodoEditor from "./component/TodoEditor";
 import TodoList from "./component/TodoList";
@@ -27,8 +27,8 @@ const mockTodo = [
 
 function App() {
   const [todo, setTodo] = useState(mockTodo);
-
   const idRef = useRef(3);
+
   const onCreate = (content) => {
     const newItem = {
       id: idRef.current,
@@ -39,6 +39,7 @@ function App() {
     setTodo([newItem, ...todo]);
     idRef.current += 1;
   };
+
   const onUpdate = (targetId) => {
     setTodo(
       todo.map((it) =>
@@ -46,6 +47,7 @@ function App() {
       )
     );
   };
+
   const onDelete = (targetId) => {
     setTodo(todo.filter((it) => it.id !== targetId));
   };
@@ -58,5 +60,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

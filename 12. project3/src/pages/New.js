@@ -7,7 +7,6 @@ import { DiaryDispatchContext } from "../App";
 
 const New = () => {
   const { onCreate } = useContext(DiaryDispatchContext);
-
   const navigate = useNavigate();
 
   const goBack = () => {
@@ -30,5 +29,4 @@ const New = () => {
     </div>
   );
 };
-
 export default New;

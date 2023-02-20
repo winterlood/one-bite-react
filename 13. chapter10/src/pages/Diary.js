@@ -1,15 +1,15 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useDiary from "../hooks/useDiary";
 import Button from "../component/Button";
 import Header from "../component/Header";
+import useDiary from "../hooks/useDiary";
 import { getFormattedDate } from "../util";
 import Viewer from "../component/Viewer";
 
 const Diary = () => {
   const { id } = useParams();
   const data = useDiary(id);
-  const navigate = useNavigate();
 
+  const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
   };
@@ -27,7 +27,7 @@ const Diary = () => {
       <div>
         <Header
           title={title}
-          leftChild={<Button text={"< 뒤로가기"} onClick={goBack} />}
+          leftChild={<Button text={"< 뒤로 가기"} onClick={goBack} />}
           rightChild={<Button text={"수정하기"} onClick={goEdit} />}
         />
         <Viewer content={content} emotionId={emotionId} />
@@ -35,5 +35,4 @@ const Diary = () => {
     );
   }
 };
-
 export default Diary;

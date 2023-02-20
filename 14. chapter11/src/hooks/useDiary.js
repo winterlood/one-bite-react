@@ -1,7 +1,6 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DiaryStateContext } from "../App";
-
 const useDiary = (id) => {
   const data = useContext(DiaryStateContext);
   const [diary, setDiary] = useState();
@@ -19,5 +18,4 @@ const useDiary = (id) => {
 
   return diary;
 };
-
 export default useDiary;

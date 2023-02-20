@@ -1,5 +1,5 @@
-import { useReducer, useCallback, useRef } from "react";
 import "./App.css";
+import { useCallback, useReducer, useRef } from "react";
 import Header from "./component/Header";
 import TodoEditor from "./component/TodoEditor";
 import TodoList from "./component/TodoList";
@@ -50,8 +50,8 @@ function reducer(state, action) {
 
 function App() {
   const [todo, dispatch] = useReducer(reducer, mockTodo);
-
   const idRef = useRef(3);
+
   const onCreate = (content) => {
     dispatch({
       type: "CREATE",
@@ -64,6 +64,7 @@ function App() {
     });
     idRef.current += 1;
   };
+
   const onUpdate = useCallback((targetId) => {
     dispatch({
       type: "UPDATE",
@@ -86,5 +87,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

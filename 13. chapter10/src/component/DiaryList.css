@@ -13,12 +13,10 @@
   border: none;
   border-radius: 5px;
   background-color: #ececec;
-
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-
   cursor: pointer;
   font-family: "Nanum Pen Script";
   font-size: 18px;
@@ -30,20 +28,4 @@
 
 .DiaryList .menu_wrapper .right_col button {
   width: 100%;
-}
-
-.DiaryItem .info_section {
-  flex-grow: 1;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.DiaryItem .info_section .date_wrapper {
-  font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 5px;
-}
-
-.DiaryItem .info_section .content_wrapper {
-  font-size: 18px;
 }
