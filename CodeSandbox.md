@@ -65,11 +65,10 @@ Disable 버튼을 클릭하시면 beta editor가 비활성화 됩니다.
 위 링크로 접속하시면 페이지 우측 상단에 **Fork** 라는 파란색 버튼이 나타납니다.  
 여기서 Fork란 쉽게 말해 "이 템플릿을 사용해 실습 환경을 구축하겠다" 라고 이해하시면 됩니다.  
 이 Fork 버튼을 클릭한 다음 자신의 계정을 선택합니다.  
-![image](https://github.com/winterlood/one-bite-react/assets/46296754/c70741c9-7ef6-4674-9cda-eaf0658804c8)
+<img width="1158" alt="image" src="https://github.com/winterlood/one-bite-react/assets/46296754/ffaaf728-2134-4dc6-a715-8399f456d1a1">
 
 그럼 다음과 같이 페이지 우측 하단에 "Forked Sandbox"라는 메세지가 나타납니다.    
-
-![image](https://github.com/winterlood/one-bite-react/assets/46296754/8c9e16e7-7599-4528-baf8-a685f7624614)
+<img width="1163" alt="image" src="https://github.com/winterlood/one-bite-react/assets/46296754/46894fd8-0bbf-437b-9406-c35b17f75a27">
 
 이때 브라우저를 한번 **새로고침** 해 주시면 템플릿을 이용한 실습 환경 구축이 완료됩니다.  
 자바스크립트 코드를 작성한 다음 console 탭을 열어서 확인해보세요  
