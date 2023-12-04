@@ -57,26 +57,27 @@ Disable 버튼을 클릭하시면 beta editor가 비활성화 됩니다.
 
 ## 03. 새로운 SandBox 생성하기
 
-이제 새로운 Sandbox를 생성하여 실습을 진행할 수 있습니다.
-여러분의 원활한 실습 환경을 위해 템플릿을 만들어 두었는데요 아래 링크로 접속하실 수 있습니다.
+이제 새로운 Sandbox를 생성하여 실습을 진행할 수 있습니다.  
+여러분의 원활한 실습 환경을 위해 템플릿을 만들어 두었는데요  
+아래 링크로 접속하실 수 있습니다.  
 [한입 크기로 잘라먹는 리액트 Sandbox 템플릿](https://codesandbox.io/s/han-ib-keugiro-jalrameogneun-riaegteu-vanila-js-template-p8kdf0)
 
-위 링크로 접속하시면 페이지 우측 상단에 **Fork** 라는 파란색 버튼이 나타납니다.
-여기서 Fork란 쉽게 말해 "이 템플릿을 사용해 실습 환경을 구축하겠다" 라고 이해하시면 됩니다.
-이 Fork 버튼을 클릭한 다음 자신의 계정을 선택합니다.
+위 링크로 접속하시면 페이지 우측 상단에 **Fork** 라는 파란색 버튼이 나타납니다.  
+여기서 Fork란 쉽게 말해 "이 템플릿을 사용해 실습 환경을 구축하겠다" 라고 이해하시면 됩니다.  
+이 Fork 버튼을 클릭한 다음 자신의 계정을 선택합니다.  
 ![image](https://github.com/winterlood/one-bite-react/assets/46296754/c70741c9-7ef6-4674-9cda-eaf0658804c8)
 
-그럼 다음과 같이 페이지 우측 하단에 "Forked Sandbox"라는 메세지가 나타나는데
+그럼 다음과 같이 페이지 우측 하단에 "Forked Sandbox"라는 메세지가 나타납니다.    
 
 ![image](https://github.com/winterlood/one-bite-react/assets/46296754/8c9e16e7-7599-4528-baf8-a685f7624614)
 
-이때 브라우저를 한번 새로고침 해 주시면 템플릿을 이용한 실습 환경 구축이 완료됩니다.
-자바스크립트 코드를 작성한 다음 console 탭을 열어서 확인해보세요
+이때 브라우저를 한번 **새로고침** 해 주시면 템플릿을 이용한 실습 환경 구축이 완료됩니다.  
+자바스크립트 코드를 작성한 다음 console 탭을 열어서 확인해보세요  
 
 <img width="1164" alt="image" src="https://github.com/winterlood/one-bite-react/assets/46296754/10a347ee-d2fe-401e-9cc8-8e58ebb52d54">
 
-이제 강의나 도서의 설명에 따라 실습을 진행하시면 됩니다.
-행복한 프로그래밍이 되시길 바랍니다.
+이제 강의나 도서의 설명에 따라 실습을 진행하시면 됩니다.  
+행복한 프로그래밍이 되시길 바랍니다.  
 
 
 
