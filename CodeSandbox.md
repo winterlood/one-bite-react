@@ -45,9 +45,9 @@ Settings를 클릭합니다.
 
 ![image](https://github.com/winterlood/one-bite-react/assets/46296754/56fd54b7-fa5b-45f1-a637-483b9069e420)
 
-Disable 버튼을 클릭하시면 beta editor가 비활성화 됩니다. 
-참고로 Disable 버튼을 클릭했음에도 UI상으로는 스위치가 안 꺼질 수 있습니다.  
-그럴 때에는 클릭하신 다음 Settings 패널을 종료하셨다가 다시 열어보시면 꺼져있을 수 있습니다.
+Disable 버튼을 클릭하시면 beta editor가 비활성화 됩니다.  
+참고로 Disable 버튼을 클릭했음에도 UI상으로는 스위치가 안 꺼질 수 있습니다.   
+그럴 때에는 클릭하신 다음 Settings 패널을 종료하셨다가 다시 열어보시면 꺼져있을 수 있습니다. 
 
 ![image](https://github.com/winterlood/one-bite-react/assets/46296754/484cef6b-bede-4a33-a2db-c24be14faaff)
 
