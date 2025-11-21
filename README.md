@@ -11,10 +11,11 @@
 [CodeSandBox가 도서와 다를 때](https://winterlood.notion.site/CodeSandbox-f2f61517db25482aac2a9f31919f19fc?pvs=4)
 
 ## 커뮤니티
+- 네이버 카페 : https://cafe.winterlood.com
+- 카카오 오픈채팅방 1 : https://open.kakao.com/o/gOWIoeKd
+- 카카오 오픈채팅방 2 : https://open.kakao.com/o/gIBtjXZg
 
-톡방 1 : https://open.kakao.com/o/gOWIoeKd
-
-(비밀 번호는 도서 또는 강의를 구입하면 확인 가능합니다)
+(오픈채팅방 입장 비밀 번호는 도서 또는 강의를 구입하면 확인 가능합니다)
 
 ## 프로젝트 에셋
 
