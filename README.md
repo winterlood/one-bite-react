@@ -21,9 +21,7 @@
 
 ### 폰트
 
-```
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap");
-```
+[다운로드](https://drive.google.com/file/d/1EHW8FN7sVAo2eV9ZH9Te46wRa3Rjmy_b/view?usp=sharing)
 
 ### 이미지 파일
 
